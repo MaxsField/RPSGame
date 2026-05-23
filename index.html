@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="game">
+    <h1>Rock Paper Scissors!</h1>
+
+    <section class="choice-buttons" aria-label="Choose your move">
+        <button type="button" class="choice-btn" data-choice="rock">
+        <img src="assets/rock.png" alt="Rock">
+        <span>Rock</span>
+        </button>
+
+        <button type="button" class="choice-btn" data-choice="paper">
+        <img src="assets/paper.png" alt="Paper">
+        <span>Paper</span>
+        </button>
+
+        <button type="button" class="choice-btn" data-choice="scissors">
+        <img src="assets/scissors.png" alt="Scissors">
+        <span>Scissors</span>
+        </button>
+    </section>
+
+    <section class="battle-area">
+        <article>
+        <h2>Player</h2>
+        <img id="playerImage" src="assets/placeholder.png" alt="Player choice">
+        <p id="playerLabel">-</p>
+        </article>
+
+        <article>
+        <h2>Computer</h2>
+        <img id="computerImage" src="assets/placeholder.png" alt="Computer choice">
+        <p id="computerLabel">-</p>
+        </article>
+    </section>
+
+    <p id="roundResult" aria-live="polite">Choose Rock, Paper, or Scissors.</p>
+
+    <section class="score-board">
+        <p>Player Score: <span id="playerScore">0</span></p>
+        <p>Computer Score: <span id="computerScore">0</span></p>
+    </section>
+
+    <button type="button" id="newGameBtn" disabled>New Game</button>
+    </main>
+</body>
+</html>
